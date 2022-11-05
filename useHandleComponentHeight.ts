@@ -1,3 +1,4 @@
+// Return the height of the component
 import { MutableRefObject, useEffect, useState } from "react";
 
 export const useHandleComponentHeight = (
