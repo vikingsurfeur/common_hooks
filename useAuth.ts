@@ -25,21 +25,20 @@ export const AuthProvider: FC = () => {
 }
 
 // Path: App.tsx App looks like this ->
+// import { AuthProvider } from './hooks/useAuth';
 
-import { AuthProvider } from './hooks/useAuth';
-
-export default const App: FC = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Login />}>
-                {/* Any other no secure routes */}
-                <Route element={<AuthProvider />}>
-                    <Route path="/home" element={<Home />} />
-                    {/* Any other secure routes */}
-                </Route>
-            </Routes>
-        </Router>
-    );
-}
+// export default const App: FC = () => {
+//     return (
+//         <Router>
+//             <Routes>
+//                 <Route path="/" element={<Login />}>
+//                 {/* Any other no secure routes */}
+//                 <Route element={<AuthProvider />}>
+//                     <Route path="/home" element={<Home />} />
+//                     {/* Any other secure routes */}
+//                 </Route>
+//             </Routes>
+//         </Router>
+//     );
+// }
 
